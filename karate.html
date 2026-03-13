@@ -3,92 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karate — El Arte del Golpe Vacío</title>
-  <link rel="stylesheet" href="karate.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <title>Karate-Do — El Arte del Camino Vacío</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="kanji">空手道</span>
+        <span class="logo-text">KARATE-DO</span>
+      </div>
+      <p class="tagline">El Camino de la Mano Vacía</p>
+    </div>
+    <div class="header-stripe"></div>
+  </header>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#estilos">Estilos</a></li>
+      <li><a href="#cinturones">Cinturones</a></li>
+      <li><a href="#competencia">Competencia</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- SECCIÓN HÉROE -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>道<span>El Arte del Camino</span></h1>
+        <p>El Karate-Do es una disciplina marcial que forja cuerpo, mente y carácter a través del entrenamiento riguroso y la búsqueda constante de la perfección técnica.</p>
+      </div>
+      <div class="hero-img-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Karate_kumite.jpg/640px-Karate_kumite.jpg"
+          alt="Dos karatekas realizando kumite (combate) en competencia oficial con uniformes blancos y cinturones rojos"
+          class="hero-img"
+        />
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: HISTORIA -->
+    <section id="historia" class="content-section">
+      <div class="section-label">01</div>
+      <div class="section-body">
+        <h2>Historia del Karate-Do</h2>
+
+        <article class="article-card">
+          <h3>Origen en Okinawa</h3>
+          <p>El Karate nació en la isla de Okinawa, Japón, como resultado de la fusión entre las artes marciales locales conocidas como <em>Te</em> (mano) y las influencias del kung fu chino. Durante siglos se practicó en secreto, ya que la clase gobernante había prohibido el uso de armas.</p>
+          <p>A principios del siglo XX, <strong>Gichin Funakoshi</strong> introdujo el Karate en Japón continental, sistematizando su enseñanza y dándole el carácter filosófico que lo define hoy: el <em>Do</em>, o "camino".</p>
+        </article>
+
+        <article class="article-card">
+          <h3>Principios Fundamentales</h3>
+          <p>El Karate-Do no es solo una disciplina de combate; es un camino de vida. Sus principios guían al practicante más allá del dojo:</p>
+          <ul class="dojo-list">
+            <li><span class="bullet-kanji">一</span> Buscar la perfección del carácter</li>
+            <li><span class="bullet-kanji">二</span> Defender el camino de la verdad</li>
+            <li><span class="bullet-kanji">三</span> Esforzarse al máximo</li>
+            <li><span class="bullet-kanji">四</span> Respetar a los demás</li>
+            <li><span class="bullet-kanji">五</span> Abstenerse de la conducta violenta</li>
+          </ul>
+          <p class="quote-block">"El objetivo final del Karate no reside en la victoria ni en la derrota, sino en el perfeccionamiento del carácter de sus participantes." — Gichin Funakoshi</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: ESTILOS Y CINTURONES -->
+    <section id="estilos" class="content-section alt-section">
+      <div class="section-label">02</div>
+      <div class="section-body">
+        <h2>Estilos Principales</h2>
+
+        <article class="article-card">
+          <h3>Los Cuatro Grandes Estilos</h3>
+          <p>Aunque existen muchos estilos de Karate, cuatro son reconocidos internacionalmente por la <em>World Karate Federation (WKF)</em>:</p>
+
+          <table class="estilos-table">
+            <thead>
+              <tr>
+                <th>Estilo</th>
+                <th>Fundador</th>
+                <th>Origen</th>
+                <th>Característica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Shotokan</strong></td>
+                <td>Gichin Funakoshi</td>
+                <td>Okinawa / Tokio</td>
+                <td>Movimientos lineales, posiciones bajas y amplias</td>
+              </tr>
+              <tr>
+                <td><strong>Goju-Ryu</strong></td>
+                <td>Chojun Miyagi</td>
+                <td>Okinawa</td>
+                <td>Mezcla técnicas duras y suaves, énfasis en respiración</td>
+              </tr>
+              <tr>
+                <td><strong>Shito-Ryu</strong></td>
+                <td>Kenwa Mabuni</td>
+                <td>Okinawa / Osaka</td>
+                <td>Más de 40 katas, combina estilos Shuri y Naha</td>
+              </tr>
+              <tr>
+                <td><strong>Wado-Ryu</strong></td>
+                <td>Hironori Ohtsuka</td>
+                <td>Japón</td>
+                <td>Fusión con jujutsu, esquivas y movimientos fluidos</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article id="cinturones" class="article-card">
+          <h3>Sistema de Cinturones (Kyu / Dan)</h3>
+          <p>El sistema de grados en Karate divide a los practicantes en dos grandes grupos: los <strong>Kyu</strong> (grados de color) para principiantes e intermedios, y los <strong>Dan</strong> (grados negros) para avanzados. El avance de grado requiere examen técnico y tiempo mínimo de práctica.</p>
+
+          <div class="belt-grid">
+            <div class="belt-item" style="--bc:#FFFFFF; --tc:#111;">Blanco<br/><small>9° Kyu</small></div>
+            <div class="belt-item" style="--bc:#F5A623; --tc:#fff;">Naranja<br/><small>8° Kyu</small></div>
+            <div class="belt-item" style="--bc:#7ED321; --tc:#fff;">Verde<br/><small>6° Kyu</small></div>
+            <div class="belt-item" style="--bc:#4A90D9; --tc:#fff;">Azul<br/><small>5° Kyu</small></div>
+            <div class="belt-item" style="--bc:#8B4513; --tc:#fff;">Marrón<br/><small>3° Kyu</small></div>
+            <div class="belt-item" style="--bc:#111111; --tc:#C8A951;">Negro<br/><small>1° Dan+</small></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: COMPETENCIA -->
+    <section id="competencia" class="content-section">
+      <div class="section-label">03</div>
+      <div class="section-body">
+        <h2>Karate en Competencia</h2>
+        <article class="article-card">
+          <h3>Modalidades Olímpicas</h3>
+          <p>El Karate debutó como deporte olímpico en los <strong>Juegos Olímpicos de Tokio 2020</strong> (celebrados en 2021). Las dos modalidades de competencia son:</p>
+          <ol class="competencia-list">
+            <li><strong>Kata:</strong> ejecución de una secuencia predefinida de movimientos técnicos, evaluada por jueces en precisión, fuerza y ritmo.</li>
+            <li><strong>Kumite:</strong> combate entre dos oponentes, con puntuaciones por técnicas ejecutadas correctamente (yuko, waza-ari, ippon).</li>
+          </ol>
+          <p>En Tokio 2020, países como Japón, España y Turquía destacaron en el medallero olímpico de Karate.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="kanji-sm">空手道</span>
+        <span>KARATE-DO</span>
+      </div>
+      <p class="footer-text">Página informativa sobre la disciplina del Karate-Do — Arquitectura y Diseño Web 2026</p>
+      <p class="footer-credit">Josué David Culajay Altán &nbsp;|&nbsp; Brigada de Comunicaciones del Ejército</p>
+    </div>
+  </footer>
 
 </body>
-
-
--
-
-    <!-- SECCIÓN 1: Historia -->
-    <section id="historia">
-      <div class="section-inner">
-        <div class="text-block">
-          <span class="label">/ Historia</span>
-          <h2>Origen y tradición</h2>
-          <p>
-            El karate nació en la isla de Okinawa, Japón, a lo largo de siglos de
-            fusión entre las artes marciales locales <em>te</em> y las influencias
-            del kung-fu chino. Se desarrolló en secreto bajo la dominación Satsuma
-            y fue sistematizado a principios del siglo XX por maestros como
-            <strong>Gichin Funakoshi</strong>, quien lo introdujo en el Japón
-            continental en 1922.
-          </p>
-          <p>
-            En 2020, el karate debutó como deporte olímpico en los Juegos de Tokio,
-            coronando décadas de esfuerzo por parte de la comunidad marcial mundial.
-          </p>
-        </div>
-        <div class="img-block">
-          <img
-            src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=700&q=80"
-            alt="Karateca con kimono blanco ejecutando una técnica de golpe en posición de combate"
-          />
-        </div>
-      </div>
-    </section>
-     <!-- SECCIÓN 2: Estilos y cinturones -->
-    <section id="estilos">
-      <div class="section-inner column">
-        <span class="label">/ Estilos principales</span>
-        <h2>Las cuatro grandes escuelas</h2>
-
-        <div class="cards">
-
-          <article class="card">
-            <div class="card-top shotokan">松</div>
-            <div class="card-body">
-              <h3>Shotokan</h3>
-              <p>El estilo más extendido en el mundo. Movimientos lineales, potentes y con posturas amplias y bajas.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top goju">剛</div>
-            <div class="card-body">
-              <h3>Goju-ryu</h3>
-              <p>Combina técnicas duras y blandas. Énfasis en el trabajo de respiración y combate cercano.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top wado">和</div>
-            <div class="card-body">
-              <h3>Wado-ryu</h3>
-              <p>Estilo armonioso que integra principios del jiu-jitsu. Movimientos fluidos y evasión elegante.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top shito">糸</div>
-            <div class="card-body">
-              <h3>Shito-ryu</h3>
-              <p>Gran repertorio de katas. Combina la potencia de Shuri-te con la fluidez de Naha-te.</p>
-            </div>
-          </article>
-
-          <p>cuarto Cambio</p>
-
-          <p>quinto Cambio  </p>
-
-        </div>
-      </div>
-    </section>
 </html>
-gitx|
